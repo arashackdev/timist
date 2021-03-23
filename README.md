@@ -1,7 +1,7 @@
 # Timist 
 All-In-One Time and Locale Util for GoLang (manipulation, conversation, and etc.)
 
-##Install
+## Install
 ```
 go get -u github.com/jimist/timist
 ```
