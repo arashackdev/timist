@@ -1,0 +1,37 @@
+linters-settings:
+  gocritic:
+    enabled-tags:
+      - diagnostic
+      - opinionated
+      - performance
+      - style
+    disabled-checks:
+      - unnamedResult
+
+  govet:
+    check-shadowing: true
+  lll:
+    line-length: 150
+  maligned:
+    suggest-new: true
+
+linters:
+  disable-all: true
+  enable:
+    - goimports
+    - deadcode
+    - errcheck
+    - gosimple
+    - govet
+    - ineffassign
+    - structcheck
+    - varcheck
+    - maligned
+    - prealloc
+    - gocritic
+    - misspell
+    - unconvert
+    - whitespace
+
+service:
+  golangci-lint-version: 1.36.x # use a fixed version to avoid introducing unexpected linters

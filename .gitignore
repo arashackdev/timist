@@ -1,3 +1,22 @@
+# Created by https://www.toptal.com/developers/gitignore/api/go,jetbrains,vscode,sublimetext,notepadpp,git
+# Edit at https://www.toptal.com/developers/gitignore?templates=go,jetbrains,vscode,sublimetext,notepadpp,git
+
+### Git ###
+# Created by git for backups. To disable backups in Git:
+# $ git config --global mergetool.keepBackup false
+*.orig
+
+# Created by git when using merge tools for conflicts
+*.BACKUP.*
+*.BASE.*
+*.LOCAL.*
+*.REMOTE.*
+*_BACKUP_*.txt
+*_BASE_*.txt
+*_LOCAL_*.txt
+*_REMOTE_*.txt
+
+### Go ###
 # Binaries for programs and plugins
 *.exe
 *.exe~
@@ -13,3 +32,84 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+
+### Go Patch ###
+/vendor/
+/Godeps/
+
+### JetBrains ###
+.idea/
+
+# CMake
+cmake-build-*/
+
+# Mongo Explorer plugin
+
+
+# File-based project format
+*.iws
+
+# IntelliJ
+out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+### NotepadPP ###
+# Notepad++ backups #
+*.bak
+
+### SublimeText ###
+# Cache files for Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# Workspace files are user-specific
+*.sublime-workspace
+
+# Project files should be checked into the repository, unless a significant
+# proportion of contributors will probably not be using Sublime Text
+# *.sublime-project
+
+# SFTP configuration file
+sftp-config.json
+
+# Package control specific files
+Package Control.last-run
+Package Control.ca-list
+Package Control.ca-bundle
+Package Control.system-ca-bundle
+Package Control.cache/
+Package Control.ca-certs/
+Package Control.merged-ca-bundle
+Package Control.user-ca-bundle
+oscrypto-ca-bundle.crt
+bh_unicode_properties.cache
+
+# Sublime-github package stores a github token in this file
+# https://packagecontrol.io/packages/sublime-github
+GitHub.sublime-settings
+
+### vscode ###
+.vscode/*
+
+# End of https://www.toptal.com/developers/gitignore/api/go,jetbrains,vscode,sublimetext,notepadpp,git
+
+# Dependency directories (remove the comment below to include it)
+vendor/
+bin/
+
+# Test and Lint utils
+.test.profile.cov
+coverage.html
+
